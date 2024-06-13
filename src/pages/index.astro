@@ -1,13 +1,14 @@
 ---
-import Three from '../components/Threejs/Three.astro';
 import Header from '../components/UI/Header.astro';
 import Navbar from '../components/UI/Navbar.astro';
 import Layout from '../layouts/Layout.astro';
+import Scene from '../components/Threejs/Scene'
 ---
 
 <Layout title="Iron Burguer">
 	<Header/>
 	<Navbar/>
-	<Three/>
+
+	<Scene client:load/>
 </Layout>
 
