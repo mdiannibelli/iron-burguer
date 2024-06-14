@@ -5,6 +5,11 @@ export default {
 		extend: {
 			colors: {
 				'primary': "#F79502"
+			},
+			backgroundImage: {
+				'mockup': "url('/imgs/mockup-1.jpg')",
+				'mockup2': "url('/imgs/mockup-2.jpg')",
+				'mockup3': "url('/imgs/mockup-3.jpg')",
 			}
 		},
 	},
