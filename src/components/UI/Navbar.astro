@@ -5,28 +5,50 @@ import LocationIcon from "../icons/LocationIcon.astro";
 ---
 
 <nav class="flex justify-center items-center flex-col">
-    <div class="flex flex-col items-center mt-16 mb-8">
-        <h1 class="uppercase font-semibold text-6xl text-white">Iron Burguer</h1>
-        <h3 class="uppercase font-light text-lg text-white tracking-[1rem]">Company</h3>
-    </div>
-    <div class="flex gap-x-12">
-        <a 
-        class="flex items-center gap-2 border-[1px] border-primary px-4 py-2 rounded-md hover:scale-110 duration-300 hover:animate-pulse animate-duration-[300ms] animate-delay-50 animate-ease-linear" 
-        href="#menu">
-            <span class="text-primary uppercase font-medium">Menu</span>
-            <MenuIcon/>
+    <div class="flex items-center mt-12 gap-x-8">
+        <a
+            class="flex items-center [&>span]:hover:text-primary [&>span]:duration-300 gap-2 hover:border-b-[1px] border-primary px-4 py-2 hover:scale-110 duration-300 hover:animate-pulse animate-duration-[300ms] animate-delay-50 animate-ease-linear"
+            href="#"
+        >
+            <span class="text-white uppercase font-medium">Home</span>
         </a>
-        <a 
-        class="flex items-center gap-2 border-[1px] border-primary px-4 py-2 rounded-md hover:scale-110 duration-300 hover:animate-pulse animate-duration-[300ms] animate-delay-50 animate-ease-linear" 
-        href="#contact">
-            <span class="text-primary uppercase font-medium">Contact</span>
-            <ContactIcon/>
+        <a
+            class="flex items-center [&>span]:hover:text-primary [&>span]:duration-300 gap-2 hover:border-b-[1px] border-primary px-4 py-2 hover:scale-110 duration-300 hover:animate-pulse animate-duration-[300ms] animate-delay-50 animate-ease-linear"
+            href="#menu"
+        >
+            <span class="text-white uppercase font-medium">Menu</span>
         </a>
-        <a 
-        class="flex items-center gap-2 border-[1px] border-primary px-4 py-2 rounded-md hover:scale-110 duration-300 hover:animate-pulse animate-duration-[300ms] animate-delay-50 animate-ease-linear" 
-        href="#locations">
-            <span class="text-primary uppercase font-medium">Locations</span>
-            <LocationIcon/>
+        <a
+            class="flex items-center [&>span]:hover:text-primary [&>span]:duration-300 gap-2 hover:border-b-[1px] border-primary px-4 py-2 hover:scale-110 duration-300 hover:animate-pulse animate-duration-[300ms] animate-delay-50 animate-ease-linear"
+            href="#locations"
+        >
+            <span class="text-white uppercase font-medium">Locations</span>
+        </a>
+        <div class="flex flex-col justify-center items-center mx-12">
+            <h1 class="uppercase font-semibold text-5xl text-white">
+                Iron Burguer
+            </h1>
+            <h3 class="uppercase font-light text-md text-white tracking-[1rem]">
+                Company
+            </h3>
+        </div>
+        <a
+            class="flex items-center [&>span]:hover:text-primary [&>span]:duration-300 gap-2 hover:border-b-[1px] border-primary px-4 py-2 hover:scale-110 duration-300 hover:animate-pulse animate-duration-[300ms] animate-delay-50 animate-ease-linear"
+            href="#gallery"
+        >
+            <span class="text-white uppercase font-medium">Gallery</span>
+        </a>
+        <a
+            class="flex items-center [&>span]:hover:text-primary [&>span]:duration-300 gap-2 hover:border-b-[1px] border-primary px-4 py-2 hover:scale-110 duration-300 hover:animate-pulse animate-duration-[300ms] animate-delay-50 animate-ease-linear"
+            href="#us"
+        >
+            <span class="text-white uppercase font-medium">Us</span>
+        </a>
+        <a
+            class="flex items-center [&>span]:hover:text-primary [&>span]:duration-300 gap-2 hover:border-b-[1px] border-primary px-4 py-2 hover:scale-110 duration-300 hover:animate-pulse animate-duration-[300ms] animate-delay-50 animate-ease-linear"
+            href="#contact"
+        >
+            <span class="text-white uppercase font-medium">Contact</span>
         </a>
     </div>
 </nav>
