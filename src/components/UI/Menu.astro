@@ -1,0 +1,46 @@
+---
+import { Image } from "astro:assets";
+import Title from "./Title.astro";
+import Section from "./Section.astro";
+
+const images = [
+    {
+        title: "Chicken Burguer",
+        url: "/public/imgs/image1.png",
+    },
+    {
+        title: "Prime Pineapple Ipa",
+        url: "/public/imgs/image2.png",
+    },
+    {
+        title: "Ice Coffe",
+        url: "/public/imgs/image3.png",
+    },
+    {
+        title: "Drink",
+        url: "/public/imgs/image4.png",
+    },
+];
+
+const repeatedImages = [...images, ...images, ...images];
+---
+
+<Section
+    id="discover-menu"
+    sectionClass="flex flex-col justify-center items-center"
+>
+    <Title title="Discover the menu" subtitle="Find your best meal" />
+    <div class="grid grid-cols-4 gap-4 mb-8">
+        {
+            repeatedImages.map((img) => (
+                <Image
+                    src={img.url}
+                    alt={img.title}
+                    width="200"
+                    height="200"
+                    class="object-cover border-none"
+                />
+            ))
+        }
+    </div>
+</Section>

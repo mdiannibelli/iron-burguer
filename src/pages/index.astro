@@ -1,13 +1,16 @@
 ---
-import Header from '../components/UI/Header.astro';
-import Navbar from '../components/UI/Navbar.astro';
-import Layout from '../layouts/Layout.astro';
-import Mockup from '../components/UI/Mockup'
+import Navbar from "../components/UI/Navbar.astro";
+import Layout from "../layouts/Layout.astro";
+import Mockup from "../components/UI/Mockup";
+import Menu from "../components/UI/Menu.astro";
+import OurMenus from "../components/UI/OurMenus.astro";
+import Whatsapp from "../components/UI/Whatsapp.astro";
 ---
 
 <Layout title="Iron Burguer">
-	<Header/>
-	<Navbar/>
-	<Mockup client:load/>
+	<Whatsapp />
+	<Navbar />
+	<Mockup client:load />
+	<Menu />
+	<OurMenus />
 </Layout>
-

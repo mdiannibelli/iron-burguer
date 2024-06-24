@@ -1,16 +1,15 @@
 ---
-import MenuIcon from "../icons/MenuIcon.astro";
-import ContactIcon from "../icons/ContactIcon.astro";
-import LocationIcon from "../icons/LocationIcon.astro";
+import Header from "./Header.astro";
 ---
 
 <nav class="flex justify-center items-center flex-col">
+    <Header />
     <div class="flex items-center mt-12 gap-x-8">
         <a
             class="flex items-center [&>span]:hover:text-primary [&>span]:duration-300 gap-2 hover:border-b-[1px] border-primary px-4 py-2 hover:scale-110 duration-300 hover:animate-pulse animate-duration-[300ms] animate-delay-50 animate-ease-linear"
-            href="#"
+            href="#discover-menu"
         >
-            <span class="text-white uppercase font-medium">Home</span>
+            <span class="text-white uppercase font-medium">Discover</span>
         </a>
         <a
             class="flex items-center [&>span]:hover:text-primary [&>span]:duration-300 gap-2 hover:border-b-[1px] border-primary px-4 py-2 hover:scale-110 duration-300 hover:animate-pulse animate-duration-[300ms] animate-delay-50 animate-ease-linear"
