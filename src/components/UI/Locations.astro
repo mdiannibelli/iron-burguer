@@ -1,0 +1,70 @@
+---
+import Section from "./Section.astro";
+import Title from "./Title.astro";
+import { FaMapMarkerAlt } from "react-icons/fa";
+import { FaPhone } from "react-icons/fa6";
+import { TbClockHour2 } from "react-icons/tb";
+import BurguerIcon from "../icons/BurguerIcon.astro";
+
+const allLocations = [
+    {
+        title: "Caballito",
+        adress: "Av. Caballito 3960, CABA.",
+        phone: "+54 9 11 7896-4950",
+        hours: "From Monday to Saturday 10:00am to 21:00pm",
+    },
+    {
+        title: "Villa Crespo",
+        adress: "Gurruchaga 242, CABA.",
+        phone: "+54 9 11 6930-1120",
+        hours: "Every day 10:00am to 21:00pm",
+    },
+    {
+        title: "San Telmo",
+        adress: "Anselmo Aeita 2506, CABA.",
+        phone: "+54 9 11 4424-6910",
+        hours: "From Tuesday to Saturday 10:00am to 21:00pm",
+    },
+];
+---
+
+<Section id="locations">
+    <Title title="Locations" subtitle="Found us" />
+    <div class="flex justify-center items-center">
+        {
+            allLocations.map((location) => (
+                <div class="bg-primary rounded h-[360px] w-[260px] flex flex-col items-center my-8 mx-4 pt-8">
+                    <BurguerIcon fill="text-black" />
+                    <div class="flex flex-col items-center mt-4">
+                        <span class="font-light text-black uppercase tracking-widest">
+                            Located in
+                        </span>
+                        <h3 class="text-black uppercase font-semibold text-3xl">
+                            {location.title}
+                        </h3>
+                    </div>
+                    <div class="flex flex-col items-center mt-4">
+                        <div class="flex max-w-[200px] p-2 items-center w-full gap-x-2">
+                            <FaMapMarkerAlt className="text-black" size={20} />
+                            <span class="font-light text-black text-[14px]">
+                                {location.adress}
+                            </span>
+                        </div>
+                        <div class="flex max-w-[200px] p-2 items-center w-full gap-x-2">
+                            <FaPhone className="text-black" size={20} />
+                            <span class="font-light text-black text-[14px]">
+                                +54 9 11 7986-4950
+                            </span>
+                        </div>
+                        <div class="flex max-w-[200px] p-2 items-center w-full gap-x-2">
+                            <TbClockHour2 className="text-black" size={20} />
+                            <span class="font-light text-black text-[14px]">
+                                {location.hours}
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            ))
+        }
+    </div>
+</Section>

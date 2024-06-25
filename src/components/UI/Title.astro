@@ -2,11 +2,11 @@
 const { title, subtitle } = Astro.props;
 ---
 
-<div class="mt-16 mb-8 w-full flex justify-center flex-col items-center">
+<div class="mt-24 w-full flex justify-center flex-col items-center">
     <h1 class="text-4xl font-semibold tracking-widest text-primary uppercase">
         {title}
     </h1>
-    <div class="h-0.5 bg-primary w-full max-w-3xl my-8"></div>
+    <div class="h-0.5 bg-primary w-full max-w-xl lg:max-w-3xl my-4"></div>
     <span class="text-md text-white font-light tracking-[1rem] uppercase my-8"
         >{subtitle}</span
     >

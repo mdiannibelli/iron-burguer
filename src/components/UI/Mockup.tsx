@@ -36,11 +36,11 @@ const Mockup = () => {
                         hoveredIndex === index && (
                             <div>
                                 <div className="absolute top-[14rem] z-10 w-full animate-fade-in-right">
-                                    <h1 className="text-6xl uppercase text-primary text-center font-semibold ">{mockup.title}</h1>
-                                    <span className="text-2xl tracking-[1.2rem] font-light flex justify-center text-white uppercase">{mockup.subtitle}</span>
+                                    <h1 className="px-2 text-4xl 2xl:text-6xl uppercase text-primary text-center font-semibold ">{mockup.title}</h1>
+                                    <span className="text-xs lg:text-md 2xl:text-2xl tracking-[0.5rem] 2xl:tracking-[1.2rem] font-light flex justify-center text-white uppercase">{mockup.subtitle}</span>
                                 </div>
-                                <div className="absolute top-[24rem] left-12 z-10 animate-fade-in-left">
-                                    <p className="text-white font-light text-center max-w-[520px]">{mockup.description}</p>
+                                <div className="absolute top-[24rem] left-4 lg:left-6 2xl:left-12 z-10 animate-fade-in-left">
+                                    <p className="text-xs 2xl:text-md text-white font-light text-center md:max-w-[220px] lg:max-w-[300px] 2xl:max-w-[520px]">{mockup.description}</p>
                                 </div>
                             </div>
                         )
