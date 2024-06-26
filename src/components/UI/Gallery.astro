@@ -1,0 +1,67 @@
+---
+import Image from "astro/components/Image.astro";
+import Section from "./Section.astro";
+import Title from "./Title.astro";
+---
+
+<Section id="gallery">
+    <Title title="Gallery" subtitle="Recent photos" />
+    <div class="min-w-screen grid grid-cols-3">
+        <Image
+            src="/public/imgs/gallery/image-1.jpg"
+            alt="Image 1"
+            class="w-full h-full object-cover"
+            width={650}
+            height={300}
+        />
+        <div class="w-full h-[300px] flex flex-col items-center justify-center">
+            <span
+                class="text-white mb-4 font-light tracking-[0.4rem] uppercase text-center"
+                >Your dream burguer</span
+            >
+            <span class="text-white text-4xl font-semibold uppercase"
+                >Try us</span
+            >
+            <a
+                href="#"
+                class="text-white border-[2px] hover:bg-white hover:text-black duration-500 border-white py-2 px-12 mt-4 text-xl uppercase font-semibold"
+                >Consult</a
+            >
+        </div>
+        <Image
+            class="row-span-2 w-full h-full object-cover"
+            src="/public/imgs/gallery/image-2.jpg"
+            alt="Image 2"
+            width={650}
+            height={600}
+        />
+        <Image
+            class="w-full h-full object-cover"
+            src="/public/imgs/gallery/image-3.jpg"
+            alt="Image 3"
+            width={650}
+            height={300}
+        />
+        <Image
+            class="row-span-2 w-full h-full object-cover"
+            src="/public/imgs/gallery/image-4.jpg"
+            alt="Image 4"
+            width={650}
+            height={600}
+        />
+        <Image
+            class="w-full h-full object-cover"
+            src="/public/imgs/gallery/image-5.jpg"
+            alt="Image 5"
+            width={650}
+            height={300}
+        />
+        <Image
+            class="w-full h-full object-cover"
+            src="/public/imgs/gallery/image-6.jpg"
+            alt="Image 6"
+            width={650}
+            height={300}
+        />
+    </div>
+</Section>
