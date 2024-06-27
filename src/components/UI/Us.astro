@@ -1,0 +1,37 @@
+---
+import Section from "./Section.astro";
+import Title from "./Title.astro";
+---
+
+<Section id="nosotros">
+    <Title title="nosotros" subtitle="Nuestra historia" />
+    <div class="flex flex-col mb-4">
+        <div class="w-full h-full">
+            <iframe
+                src="/public/202406271657.mp4"
+                class="mx-auto max-w-full max-h-full w-full md:w-[900px] h-[300px] md:h-[600px]"
+                allow="fullscreen; picture-in-picture"></iframe>
+        </div>
+        <div
+            class="flex flex-col max-w-[650px] text-center px-4 my-6 mx-auto gap-y-8"
+        >
+            <p class="text-md text-white font-light">
+                Nacimos en 2015 en Palermo, provenientes de una pasión por la
+                gastronomía y la innovación culinaria. Desde nuestros inicios,
+                nos dedicamos a ofrecer hamburguesas artesanales y cervezas de
+                alta calidad, forjando así nuestra identidad única. En nuestro
+                recorrido, nos obsesionamos con crear la hamburguesa perfecta,
+                experimentando y refinando nuestra receta hasta lograr un
+                producto excepcional.
+            </p>
+            <p class="text-md text-white font-light">
+                La reacción del público fue inmediata. Encantados con la
+                experiencia, nuestros clientes comenzaron a recomendar nuestras
+                hamburguesas de boca en boca. Ese entusiasmo y la demanda
+                creciente transformaron a Iron Burger en un lugar de culto para
+                los amantes de las hamburguesas, convirtiéndonos en un referente
+                en la escena gastronómica de la ciudad.
+            </p>
+        </div>
+    </div>
+</Section>
