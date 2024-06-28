@@ -30,7 +30,7 @@ const repeatedImages = [...images, ...images, ...images];
     sectionClass="flex flex-col justify-center items-center"
 >
     <Title title="Platos tendencia" subtitle="Encuentra tu sabor" />
-    <div class="grid grid-cols-4 gap-4 mb-8 px-4">
+    <div class="grid grid-cols-3 md:grid-cols-4 gap-4 mb-8 px-4">
         {
             repeatedImages.map((img) => (
                 <Image

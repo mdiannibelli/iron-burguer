@@ -1,10 +1,15 @@
 ---
 import Header from "./Header.astro";
+import NavbarBtn from "./NavbarBtn";
 ---
 
-<nav class="flex justify-center items-center flex-col">
+<nav
+    class="flex fixed lg:static py-6 lg:py-0 top-0 bg-black z-20 w-full justify-center items-center flex-col"
+>
     <Header />
-    <div class="flex items-center mt-12 2xl:gap-x-8 w-full justify-center">
+    <div
+        class="flex items-center mt-8 lg:mt-12 2xl:gap-x-8 w-full lg:w-auto justify-around lg:justify-center"
+    >
         <a
             class="hidden lg:flex md:text-sm items-center [&>span]:hover:text-primary [&>span]:duration-300 gap-2 hover:border-b-[1px] border-primary px-3 lg:px-4 py-2 hover:scale-110 duration-300 hover:animate-pulse animate-duration-[300ms] animate-delay-50 animate-ease-linear"
             href="#tendencias"
@@ -23,9 +28,11 @@ import Header from "./Header.astro";
         >
             <span class="text-white uppercase font-medium">Sucursales</span>
         </a>
-        <div class="flex flex-col justify-center items-center mx-4 lg:mx-12">
+        <div
+            class="flex flex-col flex-1 justify-center items-center mx-4 lg:mx-12"
+        >
             <h1
-                class="text-center uppercase font-semibold text-3xl 2xl:text-5xl text-white"
+                class="text-center uppercase font-semibold text-2xl md:text-3xl 2xl:text-5xl text-white"
             >
                 Iron Burguer
             </h1>
@@ -51,5 +58,6 @@ import Header from "./Header.astro";
         >
             <span class="text-white uppercase font-medium">Contacto</span>
         </a>
+        <NavbarBtn client:load />
     </div>
 </nav>
