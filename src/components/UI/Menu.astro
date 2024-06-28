@@ -1,24 +1,23 @@
 ---
-import { Image } from "astro:assets";
 import Title from "./Title.astro";
 import Section from "./Section.astro";
 
 const images = [
     {
         title: "Chicken Burguer",
-        url: "/public/imgs/image1.png",
+        url: "./imgs/image1.png",
     },
     {
         title: "Prime Pineapple Ipa",
-        url: "/public/imgs/image2.png",
+        url: "./imgs/image2.png",
     },
     {
         title: "Ice Coffe",
-        url: "/public/imgs/image3.png",
+        url: "./imgs/image3.png",
     },
     {
         title: "Drink",
-        url: "/public/imgs/image4.png",
+        url: "./imgs/image4.png",
     },
 ];
 
@@ -33,7 +32,7 @@ const repeatedImages = [...images, ...images, ...images];
     <div class="grid grid-cols-3 md:grid-cols-4 gap-4 mb-8 px-4">
         {
             repeatedImages.map((img) => (
-                <Image
+                <img
                     src={img.url}
                     alt={img.title}
                     width="200"

@@ -1,5 +1,4 @@
 ---
-import Image from "astro/components/Image.astro";
 import Section from "./Section.astro";
 import Title from "./Title.astro";
 ---
@@ -7,8 +6,8 @@ import Title from "./Title.astro";
 <Section id="galeria">
     <Title title="Galería" subtitle="Fotos recientes" />
     <div class="min-w-screen grid md:grid-cols-3">
-        <Image
-            src="/public/imgs/gallery/image-1.jpg"
+        <img
+            src="./imgs/gallery/image-1.jpg"
             alt="Image 1"
             class="w-full h-full object-cover"
             width={650}
@@ -28,37 +27,37 @@ import Title from "./Title.astro";
                 >Consultar</a
             >
         </div>
-        <Image
+        <img
             class="row-span-2 w-full h-full object-cover"
-            src="/public/imgs/gallery/image-2.jpg"
+            src="./imgs/gallery/image-2.jpg"
             alt="Image 2"
             width={650}
             height={600}
         />
-        <Image
+        <img
             class="w-full h-full object-cover"
-            src="/public/imgs/gallery/image-3.jpg"
+            src="./imgs/gallery/image-3.jpg"
             alt="Image 3"
             width={650}
             height={300}
         />
-        <Image
+        <img
             class="row-span-2 w-full h-full object-cover"
-            src="/public/imgs/gallery/image-4.jpg"
+            src="./imgs/gallery/image-4.jpg"
             alt="Image 4"
             width={650}
             height={600}
         />
-        <Image
+        <img
             class="w-full h-full object-cover"
-            src="/public/imgs/gallery/image-5.jpg"
+            src="./imgs/gallery/image-5.jpg"
             alt="Image 5"
             width={650}
             height={300}
         />
-        <Image
+        <img
             class="w-full h-full object-cover"
-            src="/public/imgs/gallery/image-6.jpg"
+            src="./imgs/gallery/image-6.jpg"
             alt="Image 6"
             width={650}
             height={300}
